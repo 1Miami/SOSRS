@@ -7,7 +7,7 @@
 
 .container {
     font-family: Arial, sans-serif;
-    background-image: url('../img/Group\ 1BackgroundSOS.png');
+    background-image: url('../img/pc.png');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -79,7 +79,7 @@ footer p {
     margin-left: 2%;
     margin-right: 2%;
     font-size: 120%;
-    color: #ffd900;
+    color: #ff0000;
 }
 
 /* Estilos para conteúdo principal */
