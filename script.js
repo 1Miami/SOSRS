@@ -65,14 +65,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Seleciona os elementos do DOM
  // Função para redirecionar ao clicar no botão "Realizar Teste"
-// Função para redirecionar ao clicar no botão "Realizar Teste"
-function redirectToIndex() {
-    window.location.href = "./indicador.html"; 
+ function redirectToIndex() {
+    window.location.href = "indicador.html"; 
 }
 
-// Adicionar o evento de clique ao botão "Realizar Teste"
-document.getElementById('realizar-teste-btn').addEventListener('click', redirectToIndex);
-
+// Event listener para o botão
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('btnRealizarTeste').addEventListener('click', redirectToIndex);
+});
 
 const diagnosisResult = document.getElementById('diagnosis-result');
 const prevBtn = document.getElementById('prev-btn');
