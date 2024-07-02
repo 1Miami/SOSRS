@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnóstico de Doenças - SOSRS 2024 License</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- navegação -->
+        </nav>
+    </header>
+    
+    <main>
+        <section class="banner">
+            <h2>Doenças Comuns</h2>
+            <ul>
+                <li><a href="./doencas/dengue.html">Dengue</a></li>
+                <li><a href="./doencas/leptospirose.html">Leptospirose</a></li>
+                <li><a href="./doencas/tetano.html">Tétano</a></li>
+                <li><a href="./doencas/diarreiaAguda.html">Diarréia Aguda</a></li>
+                <li><a href="./doencas/hepatiteA.html">Hepatite A</a></li>
+                <li><a href="./doencas/animais.html">Animais Peçonhentos</a></li>
+            </ul>
+        </section>
+    
+        <section class="diagnosis">
+            <h2>Realizar Teste</h2>
+            <button id="btnRealizarTeste">Realizar Teste</button>
+        </section>
+
+        <div id="carousel-container">
+            <!-- Carrosséis de sintomas -->
+        </div>
+        
+        <button id="btnTirarFoto">Tirar foto do animal!</button>
+        
+
+        <!-- Modal para exibir a câmera -->
+        <div id="modalCamera" style="display: none;">
+            <video id="videoElement" width="620" height="440" autoplay></video>
+            <button id="btnCapturar">Capturar</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>SOSRS - 2024 License</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

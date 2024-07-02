@@ -1,0 +1,227 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('../img/Group\ 1BackgroundSOS.png'); /* Substitua 'background.jpg' pelo seu arquivo de imagem */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    color: #000000;
+    text-align: center;
+    padding: 1rem 0;
+}
+section {
+
+}
+
+header h1 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+main {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+section {
+    background-color: #fff;
+    padding: 1em;
+    margin-bottom: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.banner {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+   
+}
+
+h2 {
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding-bottom: 24px;
+    margin-bottom: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+a:hover {
+    color: #23527c;
+}
+
+button {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #23527c;
+}
+.banner h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.banner ul {
+    list-style-type: none;
+    
+}
+
+.banner ul li {
+    margin-bottom: 5px;
+}
+
+.banner ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.banner ul li a:hover {
+    text-decoration: underline;
+}
+.diagnosis {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+   
+}
+
+.diagnosis h2 {
+    font-size: 1.5rem;
+    
+}
+
+#btnRealizarTeste {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#btnRealizarTeste:hover {
+    background-color: #45a049;
+}
+
+/* Estilo do footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo do p no footer */
+footer p {
+    margin: 0;
+}
+
+/* Estilo para estender a imagem de fundo pelos lados */
+html {
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+footer {
+    
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
+
+/* Ícones para as doenças */
+li:before {
+    display: inline-block;
+    width: 20px; /* ajuste a largura da imagem */
+    height: 20px; /* ajuste a altura da imagem */
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px; /* ajuste o espaçamento entre a imagem e o texto */
+    content: ''; /* necessário para o pseudo-elemento :before */
+}
+
+li:nth-child(1):before {
+    background-image: url('img/dengue.jpeg'); /* caminho para a imagem de dengue */
+}
+
+li:nth-child(2):before {
+    background-image: url('img/lep.png'); /* caminho para a imagem de leptospirose */
+}
+
+li:nth-child(3):before {
+    background-image: url('img/tet.jpeg'); /* caminho para a imagem de tétano */
+}
+
+li:nth-child(4):before {
+    background-image: url('img/dia.jpeg'); /* caminho para a imagem de diarréia aguda */
+}
+
+li:nth-child(5):before {
+    background-image: url('img/hep.jpeg'); /* caminho para a imagem de hepatite A */
+}
+
+
+li:nth-child(6):before {
+    background-image: url('img/ani.png'); /* caminho para a imagem de animais peçonhentos */
+}
+
+/* Desktop Styles */
+@media (min-width: 8px) {
+    body {
+        background-image: url('img/Group 1BackgroundSOS.png'); /* Background para desktop */
+    }
+
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    section {
+        width: 45%;
+    }
+
+    .banner {
+        margin-right: 2em;
+    }
+
+    .diagnosis {
+        margin-left: 2em;
+        padding-bottom: 10px;
+    }
+}
