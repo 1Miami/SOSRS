@@ -1,27 +1,34 @@
 /* Global Styles */
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    
-  }
-  body {
-    font-family: Arial, sans-serif;
-    background-image: url('./img/Group\ 1BackgroundSOS.png');
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('./img/Group\ 1BackgroundSOS.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 #btnTirarFoto {
   position: fixed;
   bottom: 45px;
   right: 20px;
-  z-index: 999; /* Garante que o botão esteja sempre sobre os outros elementos */
+  z-index: 999;
 }
-
+.diagnosis-result {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    word-wrap: break-word;
+}
 #btnFinalizar, #btnTirarFoto {
   display: block;
   margin: 20px auto;
@@ -31,18 +38,14 @@
   border: none;
   cursor: pointer;
 }
-
 #btnFinalizar:hover, #btnTirarFoto:hover {
   background-color: #555;
 }
-
 .diagnosis-result {
   margin-top: 20px;
   padding: 10px;
   background-color: #ddd;
 }
-
-/* Estilos para o modal de câmera */
 #modalCamera {
   position: fixed;
   top: 0;
@@ -54,7 +57,6 @@
   justify-content: center;
   align-items: center;
 }
-
 #modalCamera video {
   width: 320px;
   height: 240px;
@@ -62,7 +64,6 @@
   border-radius: 8px;
   background-color: #000;
 }
-
 #modalCamera button {
   padding: 10px 20px;
   background-color: #333;
@@ -71,212 +72,163 @@
   cursor: pointer;
   margin-top: 10px;
 }
-
 #modalCamera button:hover {
   background-color: #555;
 }
 header h1 {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
-
 nav {
-    text-align: center;
-    margin-top: 10px;
+  text-align: center;
+  margin-top: 10px;
 }
-
+html {
+  font-size: 16px;
+}
 .carousel-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 220px;
-}
-
-.symptom-checkbox {
-    margin-bottom: 10px;
-    padding-top: 20px;
-    
-}
-#carousel-1 .symptom-checkbox {
-  margin-bottom: 10px;
-  padding-top: 10px;
   display: flex;
-  justify-content: flex-start; /* alinha os itens à esquerda */
+  flex-direction: column;
+  align-items: center;
+  margin-top: 220px;
 }
-
-#carousel-1 .symptom-checkbox input[type="checkbox"] {
-  margin-left: 20px; /* margem à esquerda para separar os checkboxes */
-  margin-top: 0px;
+.symptom-checkbox {
+  margin-bottom: 10px;
+  padding-top: 20px;
 }
-#carousel-2 .symptom-checkbox input[type="checkbox"] {
-  margin-left: 20px; /* margem à esquerda para separar os checkboxes */
-  margin-top: 0px;
+.symptom-checkbox label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
-#carousel-3 .symptom-checkbox input[type="checkbox"] {
-  margin-left: 20px; /* margem à esquerda para separar os checkboxes */
-  margin-top: 0px;
-}
-#carousel-4 .symptom-checkbox input[type="checkbox"] {
-  margin-left: 20px; /* margem à esquerda para separar os checkboxes */
-  margin-top: 0px;
-}
-#carousel-5 .symptom-checkbox input[type="checkbox"] {
-  margin-left: 20px; /* margem à esquerda para separar os checkboxes */
-  margin-top: 0px;
-}
-#carousel-6 .symptom-checkbox input[type="checkbox"] {
-  margin-left: 20px; /* margem à esquerda para separar os checkboxes */
-  margin-top: 0px;
+.symptom-checkbox input[type="checkbox"] {
+  margin-right: 10px;
 }
 .pagination {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
-
 button {
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 16px;
-    padding-bottom: 10px;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
 }
-
 #diagnosis-result {
-   height: 102px;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
+  height: 102px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
 }
-
 .carousel {
-    display: none;
+  display: none;
 }
-
 .carousel.active {
-    display: block;
+  display: block;
 }
-
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-  }
-  
-  h1 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  /* Carousel Styles */
-  
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.carousel {
+  display: none;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.carousel.active {
+  display: block;
+}
+.carousel h2 {
+  margin-top: 0;
+}
+.symptom-checkbox {
+  margin-bottom: 10px;
+}
+.symptom-checkbox input[type="checkbox"] {
+  margin-right: 10px;
+}
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+.pagination button {
+  background-color: #57649e;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.pagination button:hover {
+  background-color: #04d8fd;
+}
+.pagination span {
+  margin: 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.diagnosis-result {
+  font-size: 8px;
+  font-weight: bold;
+  margin-top: 80px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.diagnosis-result a {
+  text-decoration: none;
+  color: #337ab7;
+}
+.diagnosis-result a:hover {
+  color: #23527c;
+}
+@media (max-width: 768px) {
   .carousel {
-    display: none;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 10px;
   }
-  
-  .carousel.active {
-    display: block;
-  }
-  
-  .carousel h2 {
-    margin-top: 0;
-  }
-  
   .symptom-checkbox {
-    margin-bottom: 10px;
-  }
-  
-  .symptom-checkbox input[type="checkbox"] {
-    margin-right: 10px;
-  }
-  
-  /* Pagination Styles */
-  
-  .pagination {
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  .pagination button {
-    background-color: #57649e;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .pagination button:hover {
-    background-color: #04d8fd;
-  }
-  
-  .pagination span {
-    margin: 0 10px;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  /* Diagnosis Result Styles */
-  
-  .diagnosis-result {
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 80px;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .diagnosis-result a {
-    text-decoration: none;
-    color: #337ab7;
-  }
-  
-  .diagnosis-result a:hover {
-    color: #23527c;
-  }
-  
-  /* Responsive Design */
-  
-  @media (max-width: 768px) {
-    .carousel {
-      padding: 10px;
-    }
-    .symptom-checkbox {
       margin-bottom: 5px;
-    }
-    .pagination button {
-      padding: 5px 10px;
-    }
-    .diagnosis-result {
-      padding: 10px;
-    }
   }
-  
-  @media (max-width: 480px) {
-    .carousel {
-      padding: 5px;
-    }
-    .symptom-checkbox {
-      margin-bottom: 2px;
-    }
-    .pagination button {
-      padding: 2px 5px;
-    }
-    .diagnosis-result {
-      padding: 5px;
-    }
-    .carousel-container {
-        max-width: 800px;
-        margin: 40px auto;
-        padding: 20px;
-        background-color: #fff;
-        border: 1px solid #ddd; 
+  .pagination button {
+      padding: 5px 10px;
+  }
+  .diagnosis-result {
+      padding: 10px;
+      min-height: 250px;
+  }
 }
+@media (max-width: 480px) {
+  .carousel {
+      padding: 5px;
+  }
+  .symptom-checkbox {
+      margin-bottom: 2px;
+  }
+  .pagination button {
+      padding: 2px 5px;
+  }
+  .diagnosis-result {
+      padding: 5px;
+      max-height: 400px;
+        min-height: 350px; /* Aumenta a altura mínima para dispositivos móveis */
+        padding: 20px;
+        font-size: 16px; /* Ajusta o tamanho da fonte para melhor legibilidade */
+  }
+  .carousel-container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+  }
+
 }

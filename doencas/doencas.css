@@ -1,0 +1,195 @@
+/* Estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: Arial, sans-serif;
+    background-image: url('../img/Group\ 1BackgroundSOS.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para cabeçalho */
+.imageHeader-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza horizontalmente */
+    padding: 20px;
+}
+
+.imageHeader-container img {
+    max-width: 20%;
+}
+
+.textHeader-container {
+    margin-left: 20px;
+}
+
+.textHeader-container h3 {
+    font-size: 24px;
+}
+
+#sos-heading {
+    margin-left: 3%;
+}
+
+/* Estilos para rodapé */
+footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 2px;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+footer p {
+    color: #ececec;
+    font-size: 16px;
+}
+
+/* Estilos para título */
+.Titulo {
+    text-align: center;
+}
+
+.Titulo h1 {
+    margin-bottom: 3%;
+}
+
+/* Estilos para redirecionamentos */
+.redirecionar {
+    margin-bottom: 2%;
+    margin-top: 1%;
+    text-align: center;
+}
+
+.redirecionar a {
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 120%;
+    color: #ffd900;
+}
+
+/* Estilos para conteúdo principal */
+main p {
+    margin-right: 3%;
+    margin-left: 2%;
+    font-size: large;
+}
+
+main h2 {
+    text-align: center;
+}
+
+#sintomas h2 {
+    margin-top: 6%;
+}
+
+ul {
+    margin-left: 10px;
+}
+
+ol {
+    list-style-type: none;
+    counter-reset: li;
+    text-align: left;
+}
+
+li {
+    font-size: 1.5rem;
+}
+
+li:before {
+    counter-increment: li;
+    content: counter(li, decimal-leading-zero);
+    color: #ffffff;
+    margin-right: 0.25em;
+}
+
+#transmissao {
+    margin-top: 6%;
+}
+
+/* Estilos para imagens escaláveis */
+.escala {
+    width: 90%;
+    height: auto;
+}
+
+.escala-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+/* Estilos para seção de tratamento */
+#tratamento {
+    margin-bottom: 20%;
+}
+
+/* Comportamento de rolagem suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Media queries para telas menores */
+@media only screen and (max-width: 8px) {
+    .imageHeader-container {
+        flex-direction: column; /* Altera para coluna em telas menores */
+    }
+    
+    .imageHeader-container img {
+        max-width: 80%; /* Ajusta tamanho da imagem para telas menores */
+        margin-bottom: 10px; /* Espaçamento entre elementos */
+    }
+    
+    .textHeader-container {
+        margin-left: 0; /* Remove margem lateral em telas menores */
+        text-align: center; /* Centraliza texto em telas menores */
+    }
+    
+    .redirecionar a {
+        font-size: 100%; /* Reduz tamanho do texto de redirecionamento */
+    }
+    
+    main p {
+        font-size: medium; /* Ajusta tamanho da fonte no conteúdo principal */
+    }
+}
+/* Media queries para telas menores */
+@media only screen and (max-width: 939px) {
+    .imageHeader-container {
+        flex-direction: column; /* Altera para coluna em telas menores */
+    }
+    
+    .imageHeader-container img {
+        max-width: 80%; /* Ajusta tamanho da imagem para telas menores */
+        margin-bottom: 10px; /* Espaçamento entre elementos */
+    }
+    
+    .textHeader-container {
+        margin-left: 0; /* Remove margem lateral em telas menores */
+        text-align: center; /* Centraliza texto em telas menores */
+    }
+    
+    .redirecionar a {
+        font-size: 100%; /* Reduz tamanho do texto de redirecionamento */
+    }
+    
+    main p {
+        font-size: medium; /* Ajusta tamanho da fonte no conteúdo principal */
+    }
+}
+

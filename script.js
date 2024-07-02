@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // Seleciona os elementos do DOM
  // Função para redirecionar ao clicar no botão "Realizar Teste"
  function redirectToIndex() {
-    window.location.href = "indicador.html"; 
+    window.location.href = "./indicador.html"; 
 }
 
 // Event listener para o botão
