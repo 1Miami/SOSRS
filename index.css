@@ -8,7 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-image: url('../img/Group 1BackgroundSOS.png'); /* Substitua 'background.jpg' pelo seu arquivo de imagem */
+    background-image: url('./img/pc.png'); /* Substitua 'background.jpg' pelo seu arquivo de imagem */
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -148,7 +148,7 @@ footer p {
 /* Desktop Styles */
 @media (min-width: 601px) {
     body {
-        background-image: url('./img/ 1BackgroundSOS.png'); /* Background para desktop */
+        background-image: url('./img/cel.png'); /* Background para desktop */
     }
 
     main {
